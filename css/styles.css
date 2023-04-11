@@ -27,12 +27,12 @@ h1 {
 }
 
 .display {
-  height: 125px;
+  height: 150px;
   width: 90%;
   border-radius: 50px;
   background-color: #363636;
   color: white;
-  padding: 15px 30px 15px 0;
+  padding: 0px 15px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -44,13 +44,17 @@ h1 {
 #resumenValor {
   font-family: "Roboto Slab", serif;
   font-size: 3rem;
-  padding-right: 15px;
+  text-align: end;
+  width: 95%;
+  overflow: auto;
 }
 
 #actualValor {
   font-family: "Roboto Slab", serif;
+  text-align: end;
   font-size: 2rem;
-  padding-right: 15px;
+  width: 95%;
+  overflow: auto;
 }
 
 .container-buttons {
@@ -100,17 +104,17 @@ button:active {
   }
 
   .display {
-    height: 75px;
+    height: 125px;
     border-radius: 30px;
   }
 
   #resumenValor {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding-right: 5px;
   }
 
   #actualValor {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-right: 5px;
   }
 
@@ -145,7 +149,7 @@ button:active {
   }
 
   .display {
-    height: 60px;
+    height: 100px;
     border-radius: 20px;
   }
 
@@ -162,4 +166,20 @@ button:active {
   .container-buttons {
     grid-template-columns: repeat(4, 65px);
   }
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 5px;
+  background: rgb(14, 116, 144);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(67, 56, 202);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff3;
 }

@@ -16,12 +16,13 @@ class Display {
 
   mostrarNumero() {
     this.displayActualValor.textContent = this.actualValor;
-    this.displayResumenValor.textContent = `${this.resumenValor} ${this.signos[this.tipoOperador] || ''}`;
+    // const resumenValor = this.resumenValor !== '' ? parseFloat(this.resumenValor).toFixed(3) : '';
+    this.displayResumenValor.textContent = `${this.resumenValor}${this.signos[this.tipoOperador] || ''}`;
   }
 
   agregarNumero(num) {
     if (num === '.' && this.actualValor.includes('.')) return
-    this.actualValor += num.toString();
+    this.actualValor += num;
     this.mostrarNumero();
   }
 
